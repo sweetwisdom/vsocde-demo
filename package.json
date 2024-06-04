@@ -16,8 +16,23 @@
       {
         "command": "zcc.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "zcc.explore",
+        "title": "文件管理器测试"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "zcc.explore",
+          "group": "navigation",
+          "when": "explorerResourceIsFolder",
+          "title": "文件管理器测试"
+      
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
